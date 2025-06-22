@@ -1,5 +1,6 @@
 package encoding;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -7,6 +8,7 @@ import static encoding.BuildSamplePackageUtil.buildSamplePackageFromMessage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static utils.HexString.bytesToHex;
 
+@Tag("parameterized")
 public class CsvSourceParameterizedPackageEncoderTest {
     @ParameterizedTest
     @CsvSource({

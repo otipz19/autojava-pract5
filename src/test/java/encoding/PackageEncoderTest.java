@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static utils.HexString.bytesToHex;
 
-class PackageEncoderTest {
+public class PackageEncoderTest {
     @Test
     public void encode_givenPackage_shouldEncodeToHexString() {
         Package pkg = new Package((byte)1, 2, 3, 4, "Hello, World!");
