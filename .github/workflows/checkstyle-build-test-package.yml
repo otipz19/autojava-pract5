@@ -11,6 +11,12 @@ jobs:
         with:
           java-version: '21'
           distribution: 'corretto'
+      - name: Checkstyle
+        run: mvn checkstyle:check
+      - name: Build
+        run: mvn compile
+      - name: Test
+        run: mvn test
       - name: Package
         run: mvn package
       - name: Upload jar artifact
