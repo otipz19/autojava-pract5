@@ -5,6 +5,7 @@ on:
       - "*"
 jobs:
   Checkstyle-Build-Test-Package:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
