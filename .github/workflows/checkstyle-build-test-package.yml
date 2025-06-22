@@ -1,5 +1,8 @@
 name: My Simple Pipeline that checks style, builds, tests and packages artifact
-on: [push]
+on: 
+  push:
+    tags:
+      - "*"
 jobs:
   Checkstyle-Build-Test-Package:
     runs-on: ubuntu-latest
