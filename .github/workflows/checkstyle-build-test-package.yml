@@ -19,7 +19,7 @@ jobs:
         run: mvn test
       - name: Package
         run: mvn package
-      - name: Upload jar artifact
-        uses: actions/upload-artifact@v4
+      - name: Add artifact to releases
+        uses: softprops/action-gh-release@v1
         with:
-          path: target/*.jar
+          files: target/*.jar
